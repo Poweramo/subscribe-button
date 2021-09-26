@@ -1,0 +1,98 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+#btn1,
+#btn2 {
+  position: relative;
+  user-select: none;
+  margin: auto;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  padding: 17px 20px;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  border-image: linear-gradient(
+      to right,
+      purple 10%,
+      darkblue 20%,
+      skyblue 30%,
+      lightgreen 70%,
+      yellow 80%,
+      orange 90%,
+      red 100%
+    )
+    2;
+  border-image-outset: 2;
+}
+
+#btn1 {
+  display: flex;
+  background: red;
+  color: white;
+}
+
+#btn2 {
+  display: none;
+  background: #e2e8ce;
+  color: #aaaaaa;
+}
+
+.unsubscribe {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  background: black;
+  height: 150px;
+  width: 20%;
+  padding: 10px;
+  display: none;
+  z-index: 2;
+}
+
+p {
+  color: white;
+}
+
+#unsubscribeNo,
+#unsubscribeYes {
+  background: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+#unsubscribeNo {
+  color: white;
+  margin: 50px;
+}
+
+#unsubscribeYes {
+  color: lightblue;
+}
+
+.shadow {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(128, 128, 128, 0.8);
+  z-index: 1;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
